@@ -4,11 +4,10 @@
 
 <p>You will find in this repository python scripts of various exercises made for fixing the content;</p>
 I separated the exercises into subject folders. There is also a folder of small games for fixing content. 
-<hr>
 
 <h3>⬇️ Useful Links ⬇️<h3>
 <hr> 
  <p>
-Download Python 3: https://www.python.org/downloads/
+Download Python 3: https://www.python.org/downloads/<br>
 Libs and modules: https://docs.python.org/3.7/library/index.html
  </p>
