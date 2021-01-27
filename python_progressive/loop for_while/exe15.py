@@ -5,20 +5,18 @@ print('*'*25)
 print("~ Fibonnaci Sequence ~")
 print('*'*25)
 
-first = 0
-second = 1
-
-
 n = int(input('Number: '))
+last = 1
+penultimate = 1
 
 if n == 1 or n == 2:
 	print('Result: 1')
 else:	
 	count = 3 
 	while count <= n:
-		term = first + second
-		second = first
-		first = term
+		term = last + penultimate
+		penultimate = last
+		last = term
 		count +=1
 
-		print(term)
+	print(term)
