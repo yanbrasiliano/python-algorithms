@@ -2,21 +2,19 @@
 
 # MAIOR E MENOR VALOR ENTRE X NÚMEROS.
 
-
+c = b = l = 0
 
 while True:
 	n = int(input('Enter a number: '))
-	b = l = 0
-
-	if b == n:
-		n = b
-	elif b > n:
-		n = b
-	if l == n:
-		n = l
-	elif l < n:
-		n == l
-
+	c+=1
+	if c == 1:
+		b == l == n
+	else:
+		if n > b:
+			b = n
+		if n < l:
+			l = n
+	
 	option = ' '
 	while True:
 			option = str(input('CONTINUE?[Y/N]: ')).upper().split()[0]
@@ -25,8 +23,7 @@ while True:
 			print('ERROR! Try Again.')
 	if option == 'N':
 			break
-	
 print('*'*20)
-print(f'Highest value: {b}.')
-print(f'Lowest value: {l}.')
+print(f'Max value: {b} and Min value: {l}.')
+
 print('*'*20)
