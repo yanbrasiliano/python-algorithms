@@ -22,132 +22,131 @@ while True:
 	[ 5 ]  Password with letters and special characters.\n
 	[ 6 ]  Password with numbers and special characters.''')
 	print('-'*60)
-
 	choose = int(input('Option: '))
 	size = int(input('Enter the password size: '))
 	while size <= 5:
-		print('Easy password to break, recommended: 6 or more characters.')
-		size = int(input('Enter the password size: '))
+			print('Easy password to break, recommended: 6 or more characters.')
+			size = int(input('Enter the password size: '))
 	if choose == 1:
-		v= string.ascii_letters + string.digits + string.punctuation
-		password =' '
-		for i in range (size):
-			password+=choice(v)
-		os.system('clear')
-		print('Option 1 selected.')
-		print('Generating password...')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print()
-		print(f'Password generated:{password}')
-		print()
+			v= string.ascii_letters + string.digits + string.punctuation
+			password =' '
+			for i in range (size):
+				password+=choice(v)
+			os.system('clear')
+			print('Option 1 selected.')
+			print('Generating password...')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print()
+			print(f'Password generated:{password}')
+			print()
 	if choose == 2: 
-		v= string.ascii_letters + string.digits
-		password =' '
-		for i in range (size):
-			password+=choice(v)
-		os.system('clear')
-		print('Option 2 selected.')
-		print('Generating password...')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print()
-		print(f'Password generated:{password}')
-		print()
+			v= string.ascii_letters + string.digits
+			password =' '
+			for i in range (size):
+				password+=choice(v)
+			os.system('clear')
+			print('Option 2 selected.')
+			print('Generating password...')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print()
+			print(f'Password generated:{password}')
+			print()
 	if choose == 3:
-		v= string.ascii_letters 
-		password =' '
+			v= string.ascii_letters 
+			password =' '
 
-		for i in range (size):
-			password+=choice(v)
-		os.system('clear')
-		print('Option 3 selected.')
-		print('Generating password...')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print()
-		print(f'Password generated:{password}')
-		print()
+			for i in range (size):
+				password+=choice(v)
+			os.system('clear')
+			print('Option 3 selected.')
+			print('Generating password...')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print()
+			print(f'Password generated:{password}')
+			print()
 	if choose == 4:
-		v= string.digits
-		password =' '
-		for i in range (size):
-			password+=choice(v)
-		os.system('clear')
-		print('Option 4 selected.')
-		print('Generating password...')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print()
-		print(f'Password generated:{password}')
-		print()
+			v= string.digits
+			password =' '
+			for i in range (size):
+				password+=choice(v)
+			os.system('clear')
+			print('Option 4 selected.')
+			print('Generating password...')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print()
+			print(f'Password generated:{password}')
+			print()
 	if choose == 5:
-		v= string.digits + string.punctuation
-		password =' '
-		for i in range (size):
-			password+=choice(v)
-		os.system('clear')
-		print('Option 5 selected.')
-		print('Generating password...')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print()
-		print(f'Password generated:{password}')
-		print()
+			v= string.digits + string.punctuation
+			password =' '
+			for i in range (size):
+				password+=choice(v)
+			os.system('clear')
+			print('Option 5 selected.')
+			print('Generating password...')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print()
+			print(f'Password generated:{password}')
+			print()
 	if choose == 6:
-		v= string.ascii_letters  + string.punctuation
-		password =' '
-		for i in range (size):
-			password+=choice(v)
-		os.system('clear')
-		print('Option 6 selected.')
-		print('Generating password...')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print('.')
-		sleep(1)
-		print()
-		print(f'Password generated:{password}')
-		print()
+			v= string.ascii_letters  + string.punctuation
+			password =' '
+			for i in range (size):
+				password+=choice(v)
+			os.system('clear')
+			print('Option 6 selected.')
+			print('Generating password...')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print('.')
+			sleep(1)
+			print()
+			print(f'Password generated:{password}')
+			print()
 	while True:
-		resp = str(input('GENERATE MORE PASSWORDS: [Y/N]? ')).upper().split()[0]
-		if resp in 'YN':
-				os.system('clear')
-				break
-		print('ERROR! ANSWER ONLY Y or N!')
+			resp = str(input('GENERATE MORE PASSWORDS: [Y/N]? ')).upper().split()[0]
+			if resp in 'YN':
+					os.system('clear')
+					break
+			print('ERROR! ANSWER ONLY Y or N!')
 	if resp == 'N':
-			break
-os.system('clear')
-print('Thanks for using GENERATOR STARS.')
-print()
-print()
+				break
+	os.system('clear')
+	print('Thanks for using GENERATOR STARS.')
+	print()
+	print()
 
 
