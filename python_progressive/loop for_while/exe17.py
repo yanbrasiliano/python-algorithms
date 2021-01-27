@@ -11,14 +11,12 @@ while True:
 	print(f'Calculating factorial of {f}...')
 	sleep(1)
 	#condição para fatoração.
-		while c <= f:
+	while c <= f:
 		r *= c
 		c +=1
 	print(f'{f}! = {r}.')
-	
-	x = ' '
-	while x not in 'YN':
-		x = str(input('CONTINUE? [Y/N]')).strip().upper()
-		if x == 'N':
-			break
-	print('Thanks!')
+	option = ' '
+	while option not in 'YN':
+		option = str(input('Do you want to continue? [Y/N]: ')).strip().upper()[0]
+	if option == 'N':
+		break
