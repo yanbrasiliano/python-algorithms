@@ -2,18 +2,20 @@
 
 # MAIOR E MENOR VALOR ENTRE X NÚMEROS.
 
-c = b = l = 0
+from time import sleep
+
+count = b = l = 0
 
 while True:
-	n = int(input('Enter a number: '))
-	c+=1
-	if c == 1:
-		b == l == n
+	num = int(input('Enter a number: '))
+	count+=1
+	if count == 1:
+		b=l=num
 	else:
-		if n > b:
-			b = n
-		if n < l:
-			l = n
+		if num > b:
+				b=num	
+		if num < l:
+			l = num
 	
 	option = ' '
 	while True:
@@ -23,7 +25,20 @@ while True:
 			print('ERROR! Try Again.')
 	if option == 'N':
 			break
-print('*'*20)
-print(f'Max value: {b} and Min value: {l}.')
 
-print('*'*20)
+print('.')
+sleep(1)
+print('..')
+sleep(1)
+print('...')
+sleep(1)
+print('....')
+sleep(1)
+print('.....')
+sleep(1)
+print('......')
+sleep(1)
+
+print('*'*40)
+print(f'Max value: {b} and Min value: {l}.')
+print('*'*40)
