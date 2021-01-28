@@ -1,5 +1,5 @@
 
-#Este script serve para gerar senhas automática e aleatória.
+#Este script serve para gerar senhas automáticas e aleatórias.
 
 from random import choice
 import string
