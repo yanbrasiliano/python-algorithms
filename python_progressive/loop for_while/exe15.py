@@ -1,22 +1,23 @@
-#15. A série de Fibonacci é formada pela sequência 1,1,2,3,5,8,13,21,34,55,... Faça um programa capaz de gerar a série até o n−ésimo termo.
+#16.A série de Fibonacci é formada pela seqüência 0,1,1,2,3,5,8,13,21,34,55,... Faça um programa que gere a série até que o valor seja maior que 500.
+
 
 
 print('*'*25)
 print("~ Fibonnaci Sequence ~")
 print('*'*25)
 
-n = int(input('Number: '))
 last = 1
 penultimate = 1
+print(last)
+print(penultimate)
+term = 0
 
-if n == 1 or n == 2:
-	print('Result: 1')
-else:	
-	count = 3 
-	while count <= n:
+while term < 500:
 		term = last + penultimate
 		penultimate = last
 		last = term
-		count +=1
 
-	print(term)
+		if term < 500:
+			print(term)
+		else:
+			print('ERROR')
