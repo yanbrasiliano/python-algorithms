@@ -23,6 +23,10 @@ while True:
 	[ 6 ]  Password with numbers and special characters.''')
 	print('-'*60)
 	choose = int(input('Option: '))
+	while choose > 6:
+		print('Invalided option, try again.')
+		choose = int(input('Option: '))
+	
 	size = int(input('Enter the password size: '))
 	while size <= 5:
 			print('Easy password to break, recommended: 6 or more characters.')
