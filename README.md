@@ -7,7 +7,7 @@ I separated the exercises into subject folders. There is also a folder of small 
 <br>
 <h3>⬇️ Useful Links ⬇️<h3>
 <hr> 
-<h6>
+<pre>
 Download Python 3: https://www.python.org/downloads/<br>
 Libs and modules: https://docs.python.org/3.7/library/index.html
-</h6>
+</pre>
