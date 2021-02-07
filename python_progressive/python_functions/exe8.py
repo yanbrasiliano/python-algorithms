@@ -13,6 +13,7 @@ def farenheit(c):
 
 def menu():
 	while True:
+		print()
 		print('\t CONVERTER CELSIUS - FARENHEIT')
 		print()
 		option = int(input(''' 
@@ -23,6 +24,7 @@ def menu():
 Option: '''))
 
 		while option > 3 or option < 0:
+			print()
 			print('ERROR 100 - TRY AGAIN!')
 			option = int(input('Option: '))
 		if option == 3:
@@ -32,6 +34,7 @@ Option: '''))
 		if option == 1:
 			print()
 			print('\tCELSIUS TO FARENHEIT')
+			print()
 			v = float(input('Enter a temeparature in celsius: '))
 			print()
 			x = farenheit(v)
@@ -39,6 +42,7 @@ Option: '''))
 		if option == 2:
 			print()
 			print('\tFARENHEIT  TO CELSIUS')
+			print()
 			v = float(input('Enter a temeparature in farenheit: '))
 			print()
 			y = celsius(v)
