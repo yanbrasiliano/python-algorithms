@@ -1,24 +1,24 @@
 #Função para descobrir o maior e o menor  entre 3 números.
 
 #function
-def biggest(num,count):
-	m = 0
-	if count == 1:
-		m = num
+def biggest(x,y):
+	max = 0
+	if y == 1:
+		max = y
 	else:
-		if num > m:
-			m = num
-	
+		if y > max:
+			max = y
+	return max
 
 #function	
-def smallest(num,count):
-	n = 0
-	if  count == 1:
-		n = num
+def smallest(x,y):
+	min = 0
+	if y == 1:
+		min = y
 	else:
-		if num < n:
-			n = num
-	print(f'The smallest number typed is: {n}')	
+		if y < min:
+			min = y
+	return min
 
 #main
 for c in range(0,3):
@@ -26,9 +26,8 @@ for c in range(0,3):
 	c+=1
 
 
-biggest(x,c)
-smallest(x,c)
-
+print(f'The biggest is: {biggest(x,c)}')
+print(f'The smallest is: {smallest(x,c)}')
 
 
 
