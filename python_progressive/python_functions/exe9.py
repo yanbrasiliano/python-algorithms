@@ -2,7 +2,7 @@
 
 #function
 def biggest(x,y):
-	max = 0
+	max = x
 	if y == 1:
 		max = y
 	else:
@@ -12,7 +12,7 @@ def biggest(x,y):
 
 #function	
 def smallest(x,y):
-	min = 0
+	min = x
 	if y == 1:
 		min = y
 	else:
