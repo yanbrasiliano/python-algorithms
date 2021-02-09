@@ -12,7 +12,7 @@ def show():
 	n = int(input('Show range to value: '))
 	for v in range(2,n+1):
 		if (prime(v)):
-			print(v)
+			print(f'{v}->',end=' ')
 
 
 
