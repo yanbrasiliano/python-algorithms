@@ -2,6 +2,11 @@
 
 def gap(x,y):
 	s = 0 
+	for c in range (x,y+1,1):
+		s +=c
+
+
+	print(f'Sum of the interval between {x} and {y} is {s}.')
 
 
 
