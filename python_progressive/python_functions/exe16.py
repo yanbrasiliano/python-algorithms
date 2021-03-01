@@ -2,4 +2,12 @@
 
 
 def cont(x):
-	
+	count = len(x)
+	return count
+
+def menu():
+	num = str(input('Enter a number: '))
+	print(f'The total number of digits is: {cont(num)}')
+
+while True:
+	menu()
