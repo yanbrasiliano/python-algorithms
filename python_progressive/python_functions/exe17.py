@@ -10,25 +10,19 @@ entrada todas as vezes que desejar.
     """
 
 
-def converterBR(hour):
-    if hour > 12 and hour != 24:
-        count = 0
-        for v in range(hour):
-            if v >= 12:
-                count += 1
-            return count
-    elif hour == 24:
-        return 0
-    else:
-        return hour
+def converterBR(hour, minute):
+	if 0 < hour <= 12 and 0 < minute < 60:
+		print(f'{hour}:{minute} AM')
+	elif 12 < hour <= 24 and 0 < minute < 60:
+		print(f'{hour - 12}:{minute} PM')
+	else:
+		print('INVALID VALUE!')
 
 
 def menu():
-    hour = int(input('Hour: '))
-    minute = int(input('Minute: '))
-
-    print(f'{hour}:{minute} = {converterBR(hour),minute}')
-
+	hour = int(input('Hour: '))
+	minute = int(input('Minute: '))
+	converterBR(hour,minute)
 
 while True:
-    menu()
+	menu()
