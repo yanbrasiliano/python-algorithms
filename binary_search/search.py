@@ -4,10 +4,10 @@ Numa pesquisa simples, com 50 possibilidades, o usuário teria que tentar 50 vez
 -
 Numa pesquisa binária, a pesquisa é feita com o tempo logarítmico: 0(log n). Isso nos diz que as tentativas girariam em torno de de 5 a 8. Isso não é interessante?
 -
-Source: Entendendo Algoritmos - Aditya Y.
-"""
+Source: Entendendo Algoritmos - Aditya Y. """
+
 #My Algorithm
-"""from random import randint
+from random import randint
 machine = randint(0,50)
 choice = 0
 user = 0
@@ -22,10 +22,11 @@ while user != machine:
 	else:
 		print('Entered value is correct.')
 		print(f'Total attempts: {choice}')
-		break """
+		break 
 #
 #
 #
+"""
 #Algorithm book.
 
 def search_binary(list,item):
@@ -46,3 +47,4 @@ def search_binary(list,item):
 my_list = [1,3,5,7,9]
 print (f'{search_binary(my_list,3)}')
 print (f'{search_binary(my_list,-1)}')
+"""
