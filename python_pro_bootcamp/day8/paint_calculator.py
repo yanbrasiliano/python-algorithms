@@ -2,8 +2,6 @@ def paint_calc(height,width,cover):
 	paint=(height*width)/cover
 	return paint
 
-
-
 height_wall=float(input('Height of wall: '))
 width_wall=float(input('Width of wall: '))
 coverage=float(input('Coverage of wall: '))
