@@ -21,21 +21,18 @@ logo = ['''
 ''']
 print(logo)
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 
-'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
- 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-
-
 def encrypt(text,shift):
-	cipher=""
-	for letter in alphabet:
-		pos=alphabet.index(letter)
-		newpos=pos+shift
-		newletter=alphabet[newpos]
-			
+	cipher=" " # lista vazia para receber código cifrado.
+	for letter in text:
+		position=alphabet.index(letter) # posição das letras da frase/texto digitadas.
+		new_position=position+shift # a nova posição será a posição atual + os saltos solicitados.
+		new_letter=alphabet[new_position] # a nova letra baseada nos saltos.
+		cipher+=new_letter # a junção das letras.
+	print(f'Encoded message: {cipher}')	# exposição do código cifrado.
 
-
-
-direction = input("Type 'encode' to encrypt or type 'decode' to decrypt: ")
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 text = input("Message: ").lower()
 shift = int(input("Shift number: "))
+encrypt(text,shift)
+
+
