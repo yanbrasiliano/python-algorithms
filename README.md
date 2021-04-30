@@ -15,4 +15,5 @@ Libs and modules: <pre>https://docs.python.org/3.7/library/index.html</pre>
 :open_book: Course Packet Python Progressivo -> https://www.pythonprogressivo.net/ <br>
 :open_book: List of exercises Programming Logic - Curso em Vídeo -> https://www.cursoemvideo.com/ <br>
 :open_book: Python Pro Bootcamp -> https://www.udemy.com/course/100-days-of-code/  <br>
+:open_book: Introdução à programação com PYTHON - Nilo Ney Coutinho  <br>
 
