@@ -13,7 +13,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 direct=input('Encode to encrypt, decode to decrypt: ').lower()
 text=input("Message: ").lower()
 shift=int(input("Shift number: "))
-
+shift = shift % 26
 def caesar(text,shift,direct):
 	end=""
 	if direct == "decode":
